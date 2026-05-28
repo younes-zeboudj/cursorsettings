@@ -1109,7 +1109,7 @@ workbench.contrib.onboarding.browser.changeManagement.03262025.shown: "true"
 workbench.contrib.onboarding.browser.changePopup.03292025.shown: "true"
 workbench.contrib.onboarding.browser.changeRemainingCmdBackspaceKeybindings.04012025.shown: "true"
 workbench.contrib.onboarding.browser.gettingStarted.contribution.ts.firsttime: "false"
-workbench.editor.languageDetectionOpenedLanguages.global: '[["properties",true],["html",true],["json",true],["git-commit",true],["typescript",true],["plaintext",true],["javascript",true]]'
+workbench.editor.languageDetectionOpenedLanguages.global: '[["properties",true],["html",true],["json",true],["git-commit",true],["typescript",true],["yaml",true],["plaintext",true],["javascript",true]]'
 workbench.experiments.statsigBootstrap: "{\"can_record_session\":true,\"dynamic\
   _configs\":{\"1020226244\":{\"explicit_parameters\":[\"model\"],\"group\":\"a\
   bandoned\",\"id_type\":\"userID\",\"is_device_based\":false,\"is_experiment_a\
@@ -2067,37 +2067,40 @@ workbench.experiments.statsigBootstrap: "{\"can_record_session\":true,\"dynamic\
   \"secondary_exposures\":[],\"value\":{\"group\":\"control\"}},\"2750701732\":{\
   \"group\":\"default\",\"id_type\":\"userID\",\"is_device_based\":false,\"name\
   \":\"2750701732\",\"passed\":false,\"rule_id\":\"default\",\"secondary_exposu\
-  res\":[],\"value\":{\"ad_id_to_show\":\"\"}},\"2774014927\":{\"explicit_param\
-  eters\":[\"model\"],\"group\":\"abandoned\",\"id_type\":\"userID\",\"is_devic\
-  e_based\":false,\"is_experiment_active\":false,\"is_in_layer\":true,\"is_user\
-  _in_experiment\":false,\"name\":\"2774014927\",\"rule_id\":\"abandoned\",\"se\
-  condary_exposures\":[],\"value\":{\"classifier_group\":\"\",\"model\":\"\",\"\
-  sample_rate_denominator\":0,\"user_cooldown_seconds\":86400}},\"2774016167\":{\
-  \"explicit_parameters\":[\"model\"],\"group\":\"abandoned\",\"id_type\":\"use\
-  rID\",\"is_device_based\":false,\"is_experiment_active\":false,\"is_in_layer\
-  \":true,\"is_user_in_experiment\":false,\"name\":\"2774016167\",\"rule_id\":\
-  \"abandoned\",\"secondary_exposures\":[],\"value\":{\"classifier_group\":\"\",\
-  \"model\":\"\",\"sample_rate_denominator\":0,\"user_cooldown_seconds\":86400}\
-  },\"2774017066\":{\"explicit_parameters\":[\"model\"],\"group\":\"abandoned\",\
-  \"id_type\":\"userID\",\"is_device_based\":false,\"is_experiment_active\":fal\
-  se,\"is_in_layer\":true,\"is_user_in_experiment\":false,\"name\":\"2774017066\
-  \",\"rule_id\":\"abandoned\",\"secondary_exposures\":[],\"value\":{\"classifi\
-  er_group\":\"\",\"model\":\"\",\"sample_rate_denominator\":0,\"user_cooldown_\
-  seconds\":86400}},\"2786134669\":{\"group\":\"launchedGroup\",\"group_name\":\
-  \"Control\",\"id_type\":\"userID\",\"is_device_based\":false,\"is_experiment_\
-  active\":false,\"is_user_in_experiment\":false,\"name\":\"2786134669\",\"rule\
-  _id\":\"launchedGroup\",\"secondary_exposures\":[],\"value\":{\"name\":\"\"}},\
-  \"2787634863\":{\"group\":\"default\",\"id_type\":\"userID\",\"is_device_based\
-  \":false,\"name\":\"2787634863\",\"passed\":false,\"rule_id\":\"default\",\"s\
-  econdary_exposures\":[],\"value\":{\"lifecycle\":\"off\"}},\"2789218016\":{\"\
-  group\":\"default\",\"id_type\":\"userID\",\"is_device_based\":false,\"name\":\
-  \"2789218016\",\"passed\":false,\"rule_id\":\"default\",\"secondary_exposures\
-  \":[],\"value\":{\"lifecycle\":\"off\"}},\"2789388786\":{\"group\":\"launched\
-  Group\",\"group_name\":\"Control\",\"id_type\":\"teamID\",\"is_device_based\"\
-  :false,\"is_experiment_active\":false,\"is_user_in_experiment\":false,\"name\
-  \":\"2789388786\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"\
-  value\":{\"enabled\":false}},\"2803058180\":{\"group\":\"launchedGroup\",\"gr\
-  oup_name\":\"Test
+  res\":[],\"value\":{\"ad_id_to_show\":\"\"}},\"2759483107\":{\"group\":\"pres\
+  tart\",\"id_type\":\"userID\",\"is_device_based\":false,\"is_experiment_active\
+  \":false,\"is_user_in_experiment\":false,\"name\":\"2759483107\",\"rule_id\":\
+  \"prestart\",\"secondary_exposures\":[],\"value\":{}},\"2774014927\":{\"expli\
+  cit_parameters\":[\"model\"],\"group\":\"abandoned\",\"id_type\":\"userID\",\
+  \"is_device_based\":false,\"is_experiment_active\":false,\"is_in_layer\":true,\
+  \"is_user_in_experiment\":false,\"name\":\"2774014927\",\"rule_id\":\"abandon\
+  ed\",\"secondary_exposures\":[],\"value\":{\"classifier_group\":\"\",\"model\
+  \":\"\",\"sample_rate_denominator\":0,\"user_cooldown_seconds\":86400}},\"277\
+  4016167\":{\"explicit_parameters\":[\"model\"],\"group\":\"abandoned\",\"id_t\
+  ype\":\"userID\",\"is_device_based\":false,\"is_experiment_active\":false,\"i\
+  s_in_layer\":true,\"is_user_in_experiment\":false,\"name\":\"2774016167\",\"r\
+  ule_id\":\"abandoned\",\"secondary_exposures\":[],\"value\":{\"classifier_gro\
+  up\":\"\",\"model\":\"\",\"sample_rate_denominator\":0,\"user_cooldown_seconds\
+  \":86400}},\"2774017066\":{\"explicit_parameters\":[\"model\"],\"group\":\"ab\
+  andoned\",\"id_type\":\"userID\",\"is_device_based\":false,\"is_experiment_ac\
+  tive\":false,\"is_in_layer\":true,\"is_user_in_experiment\":false,\"name\":\"\
+  2774017066\",\"rule_id\":\"abandoned\",\"secondary_exposures\":[],\"value\":{\
+  \"classifier_group\":\"\",\"model\":\"\",\"sample_rate_denominator\":0,\"user\
+  _cooldown_seconds\":86400}},\"2786134669\":{\"group\":\"launchedGroup\",\"gro\
+  up_name\":\"Control\",\"id_type\":\"userID\",\"is_device_based\":false,\"is_e\
+  xperiment_active\":false,\"is_user_in_experiment\":false,\"name\":\"2786134669\
+  \",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"value\":{\"name\
+  \":\"\"}},\"2787634863\":{\"group\":\"default\",\"id_type\":\"userID\",\"is_d\
+  evice_based\":false,\"name\":\"2787634863\",\"passed\":false,\"rule_id\":\"de\
+  fault\",\"secondary_exposures\":[],\"value\":{\"lifecycle\":\"off\"}},\"27892\
+  18016\":{\"group\":\"default\",\"id_type\":\"userID\",\"is_device_based\":fal\
+  se,\"name\":\"2789218016\",\"passed\":false,\"rule_id\":\"default\",\"seconda\
+  ry_exposures\":[],\"value\":{\"lifecycle\":\"off\"}},\"2789388786\":{\"group\
+  \":\"launchedGroup\",\"group_name\":\"Control\",\"id_type\":\"teamID\",\"is_d\
+  evice_based\":false,\"is_experiment_active\":false,\"is_user_in_experiment\":\
+  false,\"name\":\"2789388786\",\"rule_id\":\"launchedGroup\",\"secondary_expos\
+  ures\":[],\"value\":{\"enabled\":false}},\"2803058180\":{\"group\":\"launched\
+  Group\",\"group_name\":\"Test
   2\",\"id_type\":\"userID\",\"is_device_based\":false,\"is_experiment_active\"\
   :false,\"is_user_in_experiment\":false,\"name\":\"2803058180\",\"rule_id\":\"\
   launchedGroup\",\"secondary_exposures\":[],\"value\":{\"group\":\"auto_switch\
@@ -6155,7 +6158,7 @@ workbench.experiments.statsigBootstrap: "{\"can_record_session\":true,\"dynamic\
   econdary_exposures\":[],\"value\":{\"model\":\"\"}}},\"param_stores\":{},\"re\
   cording_blocked\":false,\"sdkInfo\":{\"sdkType\":\"statsig-server-core-node\",\
   \"sdkVersion\":\"0.6.0\"},\"sdkParams\":{},\"session_recording_rate\":1.0,\"t\
-  ime\":1779944232298,\"user\":{\"appVersion\":\"3.5.33\",\"country\":\"DZ\",\"\
+  ime\":1779947002210,\"user\":{\"appVersion\":\"3.5.33\",\"country\":\"DZ\",\"\
   custom\":{\"backendServiceName\":\"analytics\",\"bugbotPlanStatus\":\"OFF\",\
   \"clientChannel\":\"stable\",\"clientOS\":\"Windows\",\"clientType\":\"ide\",\
   \"clientVersion\":\"3.5.33\",\"emailDomainType\":\"non-professional\",\"isCan\
@@ -6204,3 +6207,4 @@ workbench.view.extensions.state.hidden: '[{"id":"workbench.views.extensions.inst
 workbench.view.remote.state.hidden: '[{"id":"sshHosts","isHidden":false}]'
 workbench.view.search.state.hidden: '[{"id":"workbench.view.search","isHidden":false}]'
 workbench.views.extensions.installed.size: "9"
+zokugun.cron-tasks: '{"version":"0.2.1"}'

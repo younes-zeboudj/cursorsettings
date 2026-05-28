@@ -8,7 +8,9 @@ builtin:
     - anysphere.cursor-retrieval
     - anysphere.cursor-socket
     - undefined.cursor-themes
-disabled: []
+disabled:
+  - id: formulahendry.code-runner
+    uuid: a6a0c5b2-d078-4bf5-a9ee-4e37054414b3
 enabled:
   - id: Anthropic.claude-code
     uuid: 3c13ae49-babe-45fe-8c48-5e45077a62bf
@@ -18,8 +20,6 @@ enabled:
     uuid: 9e07bcdf-857b-436f-b41c-d8d7f883eba4
   - id: esbenp.prettier-vscode
     uuid: 96fa4707-6983-4489-b7c5-d5ffdfdcce90
-  - id: formulahendry.code-runner
-    uuid: a6a0c5b2-d078-4bf5-a9ee-4e37054414b3
   - id: GitHub.github-vscode-theme
     uuid: 7328a705-91fc-49e6-8293-da6f112e482d
   - id: google.geminicodeassist

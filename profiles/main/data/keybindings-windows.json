@@ -4,5 +4,9 @@
         "key": "ctrl+e",
         "command": "-cursor.toggleAgentWindowIDEUnification",
         "when": "!isGlass && workbenchState != 'empty'"
+    },
+    {
+        "key": "ctrl+shift+alt+k",
+        "command": "git.commit"
     }
 ]
