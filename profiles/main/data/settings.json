@@ -1,0 +1,11 @@
+{
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredLightColorTheme": "Monokai",
+    "files.autoSave": "afterDelay",
+    "claudeCode.preferredLocation": "sidebar",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "debug.javascript.autoAttachFilter": "onlyWithFlag",
+    "git.postCommitCommand": "push"
+}
